@@ -1,0 +1,74 @@
+.hover-1 {
+  border-radius: 8px;
+  background: linear-gradient(#ffffff 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: 0.4s, background-position 0s;
+}
+.hover-1:hover {
+  --p: 100%;
+  color: rgb(2, 194, 9);
+  background-position: left;
+}
+
+.hover-2 {
+  border-radius: 8px;
+  background: linear-gradient(#ffffff 0 0) var(--p,0%) / var(--p,0%) no-repeat;
+  transition: .4s,background-position 0s;
+}
+
+.hover-2:hover {
+  --p: 100%;
+  color: rgb(2, 194, 9);
+  background-position: right;
+}
+
+  body {
+    background-color: azure;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    gap: 20px;
+    place-content: center;
+  }
+
+  h1 {
+    font-family: system-ui, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin: auto;
+    place-content: center;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: system-ui, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin: auto;
+    place-content: center;
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: system-ui, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin: auto;
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  p {
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+    padding: 0 0.07em;
+  }
+canvas{
+  position:absolute;
+  opacity: 0.9.5;
+  left:0;
+  top:0;
+  z-index:-1;
+}
